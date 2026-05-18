@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOC Career & Operations Complete Reference</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Syne:wght@400;500;700&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link href="style.css", rel="stylesheet"> 
+</head>
+
+<body>
+
+  <div class="progress-bar" id="progress"></div>
+
+  <div class="page-wrap">
+
+    <!-- ── HEADER ── -->
+    <header class="site-header">
+      <div class="header-tag">SOC Engineering · Threat Intelligence · Detection</div>
+      <h1 class="header-title">Complete <span>SOC</span> Reference</h1>
+      <p class="header-sub">Career roadmap, interview preparation, daily operations workflow, playbooks, reporting, and
+        continuous improvement — everything a SOC Engineer needs in one place.</p>
+      <div class="header-meta">
+        <span class="meta-pill">2+ Years Experience</span>
+        <span class="meta-pill">Detection Engineering</span>
+        <span class="meta-pill">Threat Intelligence</span>
+        <span class="meta-pill">MITRE ATT&CK</span>
+        <span class="meta-pill">SIEM / EDR</span>
+        <span class="meta-pill">Incident Response</span>
+      </div>
+    </header>
+
+    <div class="page-layout">
+
+      <!-- ── NAV SIDEBAR ── -->
+      <nav class="nav-sidebar" aria-label="Page sections">
+        <div class="nav-label">Contents</div>
+        <ul class="nav-list">
+          <li><a href="#s1" class="nav-link">01 Career roadmap</a></li>
+          <li><a href="#s2" class="nav-link">02 GitHub projects</a></li>
+          <li><a href="#s3" class="nav-link">03 Skill gaps</a></li>
+          <li><a href="#s4" class="nav-link">04 Expert mastery</a></li>
+          <li><a href="#s5" class="nav-link">05 Interview prep</a></li>
+          <li><a href="#s6" class="nav-link">06 Daily routine</a></li>
+          <li><a href="#s7" class="nav-link">07 Alert lifecycle</a></li>
+          <li><a href="#s8" class="nav-link">08 Playbooks</a></li>
+          <li><a href="#s9" class="nav-link">09 Reporting</a></li>
+          <li><a href="#s10" class="nav-link">10 Improvement</a></li>
+        </ul>
+      </nav>
+
+      <!-- ── MAIN CONTENT ── -->
+      <main class="content-col">
+
+        <!-- ══ SECTION 1: CAREER ROADMAP ══ -->
+        <section class="section" id="s1">
+          <div class="section-header">
+            <span class="section-num">01</span>
+            <h2 class="section-title">Career roadmap</h2>
+            <span class="section-badge">Target companies</span>
+          </div>
+
+          <div class="callout info" style="margin-bottom:18px">
+            <strong>Target roles:</strong> Detection Engineer · Threat Intelligence Analyst · SOC Engineer · SOC Analyst
+            L2<br>
+            <strong>Target companies:</strong> Mandiant (Google) · Trend Micro · Rapid7 · CrowdStrike · Palo Alto
+            Networks · SentinelOne · Recorded Future · Elastic Security
+          </div>
+
+          <div class="prose">
+            <p>With 2 years of hands-on experience in detection engineering, threat intelligence, and SIEM operations,
+              the profile is already strong. The gap between current level and international-vendor hiring is not
+              experience — it's visibility, specificity, and a few technical credentials that signal serious depth.</p>
+            <p>At international vendors (EU, US remote), a Detection Engineer or Threat Intel Analyst L2 with this
+              profile realistically targets <strong>$90k–$140k USD</strong> depending on location. The ceiling-breakers
+              are published open-source tools with GitHub traction, conference talks, and GREM/GCTI credentials.</p>
+          </div>
+        </section>
+
+        <!-- ══ SECTION 2: GITHUB PROJECTS ══ -->
+        <section class="section" id="s2">
+          <div class="section-header">
+            <span class="section-num">02</span>
+            <h2 class="section-title">GitHub projects to build</h2>
+            <span class="section-badge">Open source profile</span>
+          </div>
+          <div class="card-grid">
+            <div class="card accent-purple">
+              <div class="card-tag tag-purple">Detection Eng</div>
+              <div class="card-name">Sigma rule library</div>
+              <div class="card-desc">100+ production-grade Sigma rules mapped to MITRE ATT&CK. Each rule includes
+                detection rationale, false-positive notes, and test data. Use pySigma to convert to SPL/KQL/ESQL.</div>
+            </div>
+            <div class="card accent-purple">
+              <div class="card-tag tag-purple">Detection Eng</div>
+              <div class="card-name">LLM-powered strike generator</div>
+              <div class="card-desc">Python pipeline: ingest threat report PDF → extract IOCs → enrich via
+                VirusTotal/OTX → generate Caldera adversary YAML. Publish this — it is rare and impressive.</div>
+            </div>
+            <div class="card accent-teal">
+              <div class="card-tag tag-teal">Threat Intel</div>
+              <div class="card-name">IOC enrichment pipeline</div>
+              <div class="card-desc">Multi-source enrichment: VirusTotal, Shodan, AbuseIPDB, MISP. Outputs STIX 2.1
+                bundles. REST API with FastAPI. Shows both intel and engineering depth.</div>
+            </div>
+            <div class="card accent-teal">
+              <div class="card-tag tag-teal">Threat Intel</div>
+              <div class="card-name">Threat actor profiler</div>
+              <div class="card-desc">Parses vendor reports → extracts TTPs → maps to ATT&CK Navigator layer →
+                auto-generates actor profile markdown. Great for showcasing LLM automation skills.</div>
+            </div>
+            <div class="card accent-coral">
+              <div class="card-tag tag-coral">Malware</div>
+              <div class="card-name">Malware behavior lab</div>
+              <div class="card-desc">Automated sandbox detonation with behavioral tagging. YARA rule generation from
+                samples. Write-ups on real samples (Cobalt Strike, Lumma Stealer) as markdown in the repo.</div>
+            </div>
+            <div class="card accent-coral">
+              <div class="card-tag tag-coral">SOC / SIEM</div>
+              <div class="card-name">Multi-source correlation engine</div>
+              <div class="card-desc">Python tool that correlates events across simulated email, EDR, and network logs
+                within time windows. Demonstrates SOC triage logic clearly.</div>
+            </div>
+          </div>
+          <div class="callout success" style="margin-top:14px">
+            <strong>Every repo needs:</strong> a proper README with ATT&CK technique coverage table, usage examples, and
+            documented rationale. Quality of documentation is what recruiters at Mandiant and Recorded Future evaluate
+            first.
+          </div>
+        </section>
+
+        <!-- ══ SECTION 3: SKILL GAPS ══ -->
+        <section class="section" id="s3">
+          <div class="section-header">
+            <span class="section-num">03</span>
+            <h2 class="section-title">Skill gaps to close</h2>
+            <span class="section-badge">Priority order</span>
+          </div>
+          <div class="expert-list">
+            <div class="expert-item">
+              <div class="expert-icon" style="color:var(--coral)">&#9632;</div>
+              <div>
+                <div class="expert-title">STIX/TAXII & MISP <span class="priority-badge pri-critical">critical</span>
+                </div>
+                <div class="expert-desc">Industry-standard CTI exchange formats. Required at every major intel vendor.
+                  Build a MISP instance and publish to it from your IOC pipeline. STIX 2.1 bundle generation should be
+                  in your GitHub.</div>
+              </div>
+            </div>
+            <div class="expert-item">
+              <div class="expert-icon" style="color:var(--teal)">&#9632;</div>
+              <div>
+                <div class="expert-title">Cloud security & log sources <span class="priority-badge pri-high">high</span>
+                </div>
+                <div class="expert-desc">AWS CloudTrail, Azure Sentinel / Entra ID, GCP SCC. All top vendors operate
+                  cloud-native. At minimum get AWS Security Specialty or AZ-500 cert. Know what CloudTrail events look
+                  like for common attacks.</div>
+              </div>
+            </div>
+            <div class="expert-item">
+              <div class="expert-icon" style="color:var(--teal)">&#9632;</div>
+              <div>
+                <div class="expert-title">KQL & SPL query proficiency <span class="priority-badge pri-high">high</span>
+                </div>
+                <div class="expert-desc">Microsoft Sentinel (KQL) and Splunk (SPL) dominate enterprise SOCs. Add query
+                  libraries to GitHub. Write detection queries from memory for password spray, lateral movement, C2
+                  beaconing. These come up in first-round interviews.</div>
+              </div>
+            </div>
+            <div class="expert-item">
+              <div class="expert-icon" style="color:var(--amber)">&#9632;</div>
+              <div>
+                <div class="expert-title">Certifications — priority order <span
+                    class="priority-badge pri-medium">medium</span></div>
+                <div class="expert-desc"><strong>GREM</strong> (malware) → <strong>GCTI</strong> (intel) → <strong>BTL2
+                    or GDAT</strong> (detection) → <strong>OSCP</strong> (valued at Rapid7/Mandiant for detection
+                  roles). Skip CompTIA — it signals entry level at this experience tier.</div>
+              </div>
+            </div>
+            <div class="expert-item">
+              <div class="expert-icon" style="color:var(--accent)">&#9632;</div>
+              <div>
+                <div class="expert-title">Detection-as-code & CI/CD <span
+                    class="priority-badge pri-medium">medium</span></div>
+                <div class="expert-desc">Docker + GitHub Actions for detection pipelines. Run Sigma rule linting and
+                  unit tests on every commit. This shows engineering maturity beyond analyst-level work and is
+                  specifically valued at CrowdStrike, Elastic, and SentinelOne.</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ══ SECTION 4: EXPERT MASTERY ══ -->
+        <section class="section" id="s4">
+          <div class="section-header">
+            <span class="section-num">04</span>
+            <h2 class="section-title">Expert mastery points</h2>
+            <span class="section-badge">What interviewers probe</span>
+          </div>
+          <div class="card-grid">
+            <div class="card">
+              <div class="card-tag tag-purple">ATT&CK depth</div>
+              <div class="card-desc">Know sub-techniques cold. Be able to map a raw log line to a technique live. Build
+                ATT&CK Navigator layers for published actors during prep.</div>
+            </div>
+            <div class="card">
+              <div class="card-tag tag-teal">Detection logic</div>
+              <div class="card-desc">Explain baselining, false-positive tuning, and risk scoring. Know the difference
+                between behavioral and IOC-based detection and when each fails.</div>
+            </div>
+            <div class="card">
+              <div class="card-tag tag-amber">Malware RE</div>
+              <div class="card-desc">Static + dynamic analysis. Able to extract C2 configs, identify packers, write
+                YARA. IDA/Ghidra proficiency beyond surface level. Know FLOSS for obfuscated strings.</div>
+            </div>
+            <div class="card">
+              <div class="card-tag tag-blue">Intel lifecycle</div>
+              <div class="card-desc">Full F3EAD cycle. Diamond Model. Know how to assess reliability, source
+                credibility, and confidence levels. Admiralty Scale applied in practice.</div>
+            </div>
+            <div class="card">
+              <div class="card-tag tag-coral">Python automation</div>
+              <div class="card-desc">Clean, documented, tested Python. Real CLI tools with argparse, proper error
+                handling. No Jupyter-only code for production tools. Published to PyPI is a bonus.</div>
+            </div>
+            <div class="card">
+              <div class="card-tag tag-green">Write-ups</div>
+              <div class="card-desc">Publish threat analysis blog posts on Medium or your own site. Mandiant and
+                Recorded Future heavily value written intelligence products as portfolio evidence.</div>
+            </div>
+          </div>
+        </section>
+
+        <hr class="divider">
+
+        <!-- ══ SECTION 5: INTERVIEW PREP ══ -->
+        <section class="section" id="s5">
+          <div class="section-header">
+            <span class="section-num">05</span>
+            <h2 class="section-title">Interview preparation</h2>
+            <span class="section-badge">Questions & model answers</span>
+          </div>
+
+          <div class="callout info" style="margin-bottom:18px">
+            <strong>How interviewers evaluate a 2-year candidate:</strong> Do you think like an analyst or just react to
+            alerts? Can you explain <em>why</em>, not just <em>what</em>? Do you connect real work experience to the
+            question?
+          </div>
+
+          <!-- Category tabs -->
+          <div class="tab-row" id="qa-tabs"></div>
+          <div id="qa-content"></div>
+        </section>
+
+        <hr class="divider">
+
+        <!-- ══ SECTION 6–10: SOC WORKFLOW ══ -->
+        <section class="section" id="s6">
+          <div class="section-header">
+            <span class="section-num">06–10</span>
+            <h2 class="section-title">SOC operations workflow</h2>
+            <span class="section-badge">Full playbook</span>
+          </div>
+
+          <div class="callout success" style="margin-bottom:18px">
+            <strong>The four concurrent loops:</strong> Triage loop (process alerts) · Investigation loop (go deep on
+            real threats) · Improvement loop (close detection gaps) · Intelligence loop (feed external context in).
+            Every SOC job maps to at least one of these.
+          </div>
+
+          <div class="view-tab-row" id="workflow-tabs"></div>
+          <div class="metrics-row" id="workflow-metrics"></div>
+          <div id="workflow-content"></div>
+        </section>
+
+        <!-- ══ CERTS TABLE ══ -->
+        <hr class="divider">
+        <section class="section">
+          <div class="section-header">
+            <span class="section-num">11</span>
+            <h2 class="section-title">Certification ROI</h2>
+          </div>
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Cert</th>
+                <th>Signal</th>
+                <th>Best for</th>
+                <th>Priority</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>GREM</td>
+                <td>GIAC Reverse Engineering Malware</td>
+                <td>Malware analysis / detection roles. Highest signal at Mandiant, CrowdStrike.</td>
+                <td><span class="card-tag tag-coral">1st</span></td>
+              </tr>
+              <tr>
+                <td>GCTI</td>
+                <td>GIAC Cyber Threat Intelligence</td>
+                <td>Direct line to Mandiant, Recorded Future, Trend Micro intel roles.</td>
+                <td><span class="card-tag tag-coral">2nd</span></td>
+              </tr>
+              <tr>
+                <td>BTL2</td>
+                <td>Blue Team Labs Level 2</td>
+                <td>Detection engineering credential, more accessible cost-wise than GIAC.</td>
+                <td><span class="card-tag tag-amber">3rd</span></td>
+              </tr>
+              <tr>
+                <td>OSCP</td>
+                <td>Offensive Security Certified Pro</td>
+                <td>Valued at Rapid7, Mandiant for detection/purple team scope. Worth it if targeting those
+                  specifically.</td>
+                <td><span class="card-tag tag-blue">4th</span></td>
+              </tr>
+              <tr>
+                <td>AZ-500</td>
+                <td>Microsoft Azure Security Engineer</td>
+                <td>Cloud SOC roles, Microsoft Sentinel-heavy environments.</td>
+                <td><span class="card-tag tag-teal">Cloud</span></td>
+              </tr>
+              <tr>
+                <td>AWS Security Specialty</td>
+                <td>AWS Security competency</td>
+                <td>Cloud-native detection. Any team running AWS infrastructure.</td>
+                <td><span class="card-tag tag-teal">Cloud</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- ══ FOOTER ══ -->
+        <footer class="site-footer">
+          <span class="footer-text">SOC Complete Reference · Generated from conversation context</span>
+          <span class="footer-text">Detection Engineering · Threat Intel · IR · MITRE ATT&CK</span>
+        </footer>
+
+      </main>
+    </div>
+  </div>
+
+  <script>
+    /* ── Progress bar ── */
+    window.addEventListener('scroll', () => {
+      const p = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+      document.getElementById('progress').style.width = Math.min(p, 100) + '%';
+    });
+
+    /* ── Nav active ── */
+    const navLinks = document.querySelectorAll('.nav-link');
+    const sections = document.querySelectorAll('section[id]');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          navLinks.forEach(l => l.classList.remove('active'));
+          const match = document.querySelector(`.nav-link[href="#${e.target.id}"]`);
+          if (match) match.classList.add('active');
+        }
+      });
+    }, { threshold: 0.3 });
+    sections.forEach(s => observer.observe(s));
+
+    /* ── Q&A DATA ── */
+    const qaCategories = [
+      {
+        id: 'triage', label: 'Alert triaging', color: '#9b7aff', bg: 'rgba(155,122,255,.15)', tc: '#b89fff',
+        questions: [
+          {
+            q: 'You get 200 alerts at shift start. How do you prioritize?', hard: 'core', hard_bg: 'rgba(155,122,255,.15)', hard_tc: '#b89fff',
+            approach: 'Use a risk-scoring matrix: combine asset criticality × alert severity × confidence score. High-value assets (DC, crown jewels) auto-elevate. Cluster related alerts before touching individual ones.',
+            outstanding: 'Mention alert fatigue and noise reduction. Propose grouping by source IP or campaign ID first. Reference MTTR impact of wrong prioritization. Show you think in campaigns not individual alerts.',
+            avoid: "Don't say 'start from the top of the queue'. That answer fails immediately.",
+            tags: ['alert fatigue', 'asset criticality', 'MTTR', 'clustering']
+          },
+          {
+            q: 'Walk me through how you investigate a phishing alert end-to-end.', hard: 'scenario', hard_bg: 'rgba(45,204,167,.12)', hard_tc: '#5ddec0',
+            approach: 'Email header analysis → sender reputation → URL/attachment sandbox → check for credential harvest pages → pivot on sender domain → check if any user clicked → examine endpoint logs for post-click behavior → contain if needed.',
+            outstanding: 'Mention checking SPF/DKIM/DMARC failures. Pivot to EDR: was PowerShell spawned by Outlook? Map to ATT&CK T1566.001. Check if same link hit other mailboxes.',
+            avoid: "Don't stop at 'I'd check the email'. Show the full chain.",
+            tags: ['T1566', 'email header', 'sandbox', 'EDR pivot', 'ATT&CK']
+          },
+          {
+            q: 'An endpoint is sending 50MB/s outbound to an unknown IP at 2am. What do you do?', hard: 'scenario', hard_bg: 'rgba(45,204,167,.12)', hard_tc: '#5ddec0',
+            approach: 'Isolate the endpoint immediately. Check process responsible for connection via EDR. Look up destination IP (VirusTotal, Shodan, AbuseIPDB). Check DNS history. Review parent-child process tree. Identify if data volume matches known data stores.',
+            outstanding: 'Discuss exfil indicators: T1048/T1041. Check if this is a scheduled task — persistence mechanism. Correlate with recent authentications to the host. Ask: was there a prior access vector? What already left?',
+            avoid: "Don't just block the IP. That doesn't answer what already exfiltrated.",
+            tags: ['T1048', 'exfiltration', 'EDR', 'process tree', 'containment']
+          }
+        ]
+      },
+      {
+        id: 'siem', label: 'SIEM & logs', color: '#2dcca7', bg: 'rgba(45,204,167,.12)', tc: '#5ddec0',
+        questions: [
+          {
+            q: 'How do you detect lateral movement across your environment? What log sources do you correlate?', hard: 'core', hard_bg: 'rgba(155,122,255,.15)', hard_tc: '#b89fff',
+            approach: 'Windows Security Event Log 4624/4625/4648 (logon types), 4776 (NTLM auth), Sysmon 3 (network connections), EDR process events, firewall east-west traffic, AD authentication logs.',
+            outstanding: 'Define the detection logic: same source account authenticating to 3+ hosts within 30 minutes is a strong lateral movement signal. Mention type-3 vs type-10 logons. Reference T1021 sub-techniques. Bonus: write the Sigma or SPL query mentally.',
+            avoid: "Don't list log sources without explaining the correlation logic.",
+            tags: ['EventID 4624', 'lateral movement', 'T1021', 'Sigma', 'correlation window']
+          },
+          {
+            q: 'Write detection logic for a password spray attack.', hard: 'technical', hard_bg: 'rgba(240,160,48,.12)', hard_tc: '#f5bd60',
+            approach: 'Count failed logins (EventID 4625) per source IP across many usernames within a short time window. Threshold: 1 IP → 10+ unique usernames with failure code 0xC000006A within 5 minutes.',
+            outstanding: 'Distinguish spray from brute force: spray = many users, few attempts each. Check for success after failures — that is the compromise signal. Mention T1110.003. Show KQL: SecurityEvent | where EventID == 4625 | summarize count(), dcount(TargetUserName) by IpAddress, bin(TimeGenerated, 5m) | where dcount_TargetUserName > 10',
+            avoid: "Don't confuse spray with brute force. That is a red flag answer.",
+            tags: ['T1110.003', 'KQL', 'EventID 4625', 'threshold', 'spray vs brute']
+          },
+          {
+            q: 'How do you detect a living-off-the-land (LotL) attack?', hard: 'advanced', hard_bg: 'rgba(255,107,82,.12)', hard_tc: '#ff9480',
+            approach: 'Focus on process behavior, not hashes. Flag: powershell.exe with encoded commands (-enc), certutil.exe downloading files, wmic spawning child processes, mshta.exe running scripts, regsvr32 loading DLLs from web.',
+            outstanding: 'Reference LOLBins list. Explain why signature-based detection fails here — everything is signed Microsoft binaries. Detection must be behavioral. Example: powershell.exe -enc spawned by excel.exe is almost certainly malicious. Tie to T1059.001, T1218.',
+            avoid: "Don't say 'use antivirus'. AV fails entirely on LotL.",
+            tags: ['LOLBins', 'T1059', 'T1218', 'behavioral detection', 'Sysmon']
+          }
+        ]
+      },
+      {
+        id: 'ir', label: 'Incident response', color: '#ff6b52', bg: 'rgba(255,107,82,.12)', tc: '#ff9480',
+        questions: [
+          {
+            q: 'Walk me through the incident response lifecycle.', hard: 'core', hard_bg: 'rgba(155,122,255,.15)', hard_tc: '#b89fff',
+            approach: 'PICERL: Preparation → Identification → Containment → Eradication → Recovery → Lessons Learned. Or NIST SP 800-61. Each phase has specific actions and outputs.',
+            outstanding: "Don't just list phases. For each, give a real action: Containment = isolate endpoint AND preserve memory image before shutdown. Recovery = verify IOCs cleared before reconnecting. Post-incident = write-up feeds back into detection rule improvement.",
+            avoid: "Mixing up the phases or skipping Lessons Learned — that separates reactive from mature IR.",
+            tags: ['PICERL', 'NIST 800-61', 'containment', 'eradication', 'post-incident']
+          },
+          {
+            q: 'You discover a compromised admin account that has been active for 3 weeks. What do you do?', hard: 'scenario', hard_bg: 'rgba(45,204,167,.12)', hard_tc: '#5ddec0',
+            approach: 'Do NOT disable immediately — first understand full scope. Pull auth logs for 3 weeks, identify every system touched, check for persistence mechanisms installed, check for data staged or exfiltrated, check for new accounts created. Then contain in coordinated action.',
+            outstanding: 'This is a long dwell time scenario. Stress: scope before containment. Disabling the account before scoping tips off the attacker if still active, and you lose visibility. Coordinate with threat intel: is this a known APT TTPs pattern?',
+            avoid: "Saying 'immediately reset the password' without scoping first — classic answer that destroys evidence.",
+            tags: ['dwell time', 'scope before contain', 'persistence', 'AD forensics', 'T1078']
+          },
+          {
+            q: 'How do you handle a ransomware incident in progress?', hard: 'scenario', hard_bg: 'rgba(45,204,167,.12)', hard_tc: '#5ddec0',
+            approach: 'STOP SPREAD FIRST: isolate affected hosts from network immediately (but preserve memory). Identify patient zero and initial vector. Check backup integrity. Do not pay or engage until scope is known. Notify legal/management per IR plan.',
+            outstanding: 'Key insight: ransomware is the last stage. The attacker had access for days/weeks. Scope the full compromise, not just the encrypted hosts. Check for exfiltration before encryption (double extortion). Look for the initial access vector.',
+            avoid: "Saying 'restore from backup' as step one. Backups may also be encrypted. Scope first.",
+            tags: ['double extortion', 'patient zero', 'isolation', 'T1486', 'backup validation']
+          }
+        ]
+      },
+      {
+        id: 'intel', label: 'Threat intel', color: '#4f8cff', bg: 'rgba(79,140,255,.12)', tc: '#82b0ff',
+        questions: [
+          {
+            q: 'Explain the difference between strategic, operational, and tactical threat intelligence.', hard: 'core', hard_bg: 'rgba(155,122,255,.15)', hard_tc: '#b89fff',
+            approach: 'Strategic: high-level, for executives — what threat actors target your industry. Operational: campaign-level — what group is active now, their current TTPs. Tactical: IOC-level — specific IPs, hashes, domains.',
+            outstanding: "Give a real example: 'A CERT advisory about APT41 targeting pharma is strategic. A report detailing their current use of ShadowPad with specific C2 patterns is operational. The associated C2 IPs and YARA rules are tactical.' Explain that tactical intel has the shortest shelf life — IPs rotate within hours.",
+            avoid: "Conflating operational and tactical. Common mistake.",
+            tags: ['APT41', 'strategic', 'operational', 'tactical', 'IOC shelf life']
+          },
+          {
+            q: 'What is the Diamond Model and how do you apply it practically?', hard: 'advanced', hard_bg: 'rgba(255,107,82,.12)', hard_tc: '#ff9480',
+            approach: 'Four vertices: Adversary, Infrastructure, Capability, Victim. Every intrusion event connects all four. Pivoting on any vertex reveals the others: knowing C2 infrastructure lets you find other victims using the same infra.',
+            outstanding: "Walk through a real example: 'Cobalt Strike beacon phoning home to 185.x.x.x — that is Capability→Infrastructure. Search Shodan/Censys for other hosts with same Cobalt Strike cert fingerprint — now you have more Infrastructure. Check who else was targeted — new Victims. TTPs stay consistent even when IPs rotate — that is the Adversary vertex.'",
+            avoid: "Describing it as just a diagram without showing how you pivot on vertices.",
+            tags: ['Diamond Model', 'Cobalt Strike', 'pivoting', 'infrastructure', 'adversary']
+          }
+        ]
+      },
+      {
+        id: 'detection', label: 'Detection eng.', color: '#5db86a', bg: 'rgba(93,184,106,.12)', tc: '#85d090',
+        questions: [
+          {
+            q: 'What makes a good detection rule vs a noisy one?', hard: 'core', hard_bg: 'rgba(155,122,255,.15)', hard_tc: '#b89fff',
+            approach: 'Good rule: high specificity (low FP rate), maps to a discrete malicious behavior, has documented rationale, tested against known-good baselines. Noisy rule: generic conditions that fire on legitimate activity.',
+            outstanding: "Use the 'baselining' concept: before writing a rule for PowerShell encoded commands, know your baseline rate of encoded PS. If it is zero, any encoded PS is a detection. If finance runs it daily, you need exclusions scoped by process parent. Precision > recall in production SOC.",
+            avoid: "Writing rules purely on IOCs without behavioral anchoring — IOCs rotate, behavior doesn't.",
+            tags: ['specificity', 'baselining', 'FP rate', 'exclusions', 'behavioral']
+          },
+          {
+            q: 'Explain detection-as-code. What does a mature detection pipeline look like?', hard: 'advanced', hard_bg: 'rgba(255,107,82,.12)', hard_tc: '#ff9480',
+            approach: 'Detections treated like software: version-controlled in Git, peer reviewed, tested automatically with synthetic log data, deployed via CI/CD pipeline to SIEM, monitored for FP rate drift.',
+            outstanding: 'Describe the full pipeline: Sigma rule authoring → pySigma converts to SPL/KQL/ESQL → GitHub Actions runs rule syntax validation and tests against sample data → deployed to staging SIEM → FP rate monitored → rule promoted to production.',
+            avoid: "Treating detections as ad-hoc SIEM queries with no version control.",
+            tags: ['detection-as-code', 'CI/CD', 'Sigma', 'pySigma', 'MITRE CAR']
+          }
+        ]
+      },
+      {
+        id: 'behavioral', label: 'Behavioral', color: '#f0a030', bg: 'rgba(240,160,48,.12)', tc: '#f5bd60',
+        questions: [
+          {
+            q: 'Tell me about a time you found something others missed.', hard: 'behavioral', hard_bg: 'rgba(79,140,255,.12)', hard_tc: '#82b0ff',
+            approach: 'Use STAR structure. Focus on the detection gap or hunting hypothesis that led you to it, not just the outcome.',
+            outstanding: "Your chance to mention the LLM simulation pipeline or lab detonation work. Example: 'During threat hunting, I noticed our detection rules weren't covering a specific initial access vector used in a recent CERT advisory. I built a simulated attack package, detonated it in our lab, observed the actual log pattern, and wrote a Sigma rule against the real behavior rather than the IOC.'",
+            avoid: "Vague answers like 'I am very detail-oriented'. They want a real story.",
+            tags: ['STAR', 'threat hunting', 'gap coverage', 'impact', 'concrete story']
+          },
+          {
+            q: 'How do you communicate a critical incident to non-technical management?', hard: 'behavioral', hard_bg: 'rgba(79,140,255,.12)', hard_tc: '#82b0ff',
+            approach: 'Business impact language: what data/systems are at risk, estimated downtime, regulatory implications, recommended actions with timeline. No jargon.',
+            outstanding: 'Describe a tiered communication model: IR team gets full technical details, management gets 3-bullet executive summary (what happened, blast radius, what we are doing), legal gets data exposure specifics.',
+            avoid: "Walking management through hex dumps or Sigma rules — that is a communication failure.",
+            tags: ['executive brief', 'tiered communication', 'business impact', 'regulatory', 'IR communication']
+          }
+        ]
+      }
+    ];
+
+    /* ── Render Q&A ── */
+    let activeQACat = 'triage';
+    let openQA = null;
+
+    function renderQATabs() {
+      document.getElementById('qa-tabs').innerHTML = qaCategories.map(c =>
+        `<button class="tab-btn${c.id === activeQACat ? ' active' : ''}" onclick="selectQACat('${c.id}')"
+      style="${c.id === activeQACat ? `border-color:${c.color};color:${c.tc};background:${c.bg}` : ''}">${c.label}</button>`
+      ).join('');
+    }
+
+    function renderQAContent() {
+      const cat = qaCategories.find(c => c.id === activeQACat);
+      document.getElementById('qa-content').innerHTML = '<div class="accordion">' +
+        cat.questions.map((q, i) => {
+          const id = `qa-${activeQACat}-${i}`;
+          const isOpen = openQA === id;
+          return `<div class="qa-card${isOpen ? ' open' : ''}">
+        <div class="qa-header" onclick="toggleQA('${id}')">
+          <span class="qa-badge" style="background:${q.hard_bg};color:${q.hard_tc}">${q.hard}</span>
+          <span class="qa-text">${q.q}</span>
+          <span class="qa-chev">&#8964;</span>
+        </div>
+        <div class="qa-body">
+          <div class="qa-inner">
+            <div><div class="ans-label">Solid answer</div><div class="ans-text">${q.approach}</div></div>
+            <div><div class="ans-label">Outstanding answer</div><div class="ans-highlight">${q.outstanding}</div></div>
+            <div><div class="ans-label">What to avoid</div><div class="ans-avoid">${q.avoid}</div></div>
+            <div class="tag-row">${q.tags.map(t => `<span class="tag-chip">${t}</span>`).join('')}</div>
+          </div>
+        </div>
+      </div>`;
+        }).join('') + '</div>';
+    }
+
+    function selectQACat(id) { activeQACat = id; openQA = null; renderQATabs(); renderQAContent(); }
+    function toggleQA(id) { openQA = openQA === id ? null : id; renderQAContent(); }
+
+    /* ── WORKFLOW DATA ── */
+    const workflowViews = {
+      daily: {
+        label: 'Daily routine', color: '#9b7aff', bg: 'rgba(155,122,255,.15)', tc: '#b89fff', dot: '#9b7aff',
+        metrics: [{ val: '3×', lbl: 'Shift handovers/day' }, { val: '~200', lbl: 'Avg alerts/shift' }, { val: '15 min', lbl: 'Morning intel brief' }, { val: 'EOD', lbl: 'Shift report deadline' }],
+        phases: [
+          {
+            title: 'Shift start — handover & situational awareness', time: 'First 30 min', steps: [
+              { label: 'Receive handover brief', text: 'Review open incidents, escalated tickets, active hunts, overnight IOCs. Outgoing analyst highlights anything needing immediate attention. Document acknowledgment in ticketing system.', tools: ['Jira / ServiceNow', 'Slack / Teams', 'Threat intel feed'] },
+              { label: 'Check overnight intel feeds', text: 'Scan CISA KEV for new exploited CVEs, vendor advisories (Mandiant, MSRC), partner ISAC alerts. Cross-reference against asset inventory — any exposed assets matching new CVEs get immediately escalated.', tools: ['CISA KEV', 'MSRC', 'ISAC portal', 'VirusTotal'] },
+              { label: 'Review SIEM dashboard', text: 'Glance at alert volume trend vs. baseline. Spike overnight = something happened or a rule is misfiring. Check top alert categories, top source IPs, top targeted users. Mental model: what does normal look like today?', tools: ['Elastic / Splunk / Sentinel', 'SIEM dashboard'] },
+              { label: 'Check open ticket queue', text: 'Prioritize tickets by SLA age, asset criticality, and severity. Any ticket approaching SLA breach gets addressed first regardless of personal queue order.', tools: ['Jira', 'ServiceNow'] }
+            ]
+          },
+          {
+            title: 'Core shift — alert triage & investigation', time: 'Middle 4–6 hours', steps: [
+              { label: 'Alert queue prioritization', text: 'Apply risk score: asset criticality × alert severity × confidence. Cluster related alerts by source IP or campaign before diving into individuals. High-severity on crown-jewel assets first.', tools: ['SIEM', 'EDR', 'Asset CMDB'] },
+              { label: 'L1 triage decision', text: 'For each alert: Is this a known FP? Is this a known benign pattern? If yes → close with documented rationale. If no → promote to L2 investigation. Rule: never close without a reason in the ticket.', tools: ['SIEM', 'VirusTotal', 'Ticketing'] },
+              { label: 'L2 deep investigation', text: 'Pull full context: process tree, parent-child relationships, network connections, user auth history, file system activity. Pivot across log sources. Map observed behavior to MITRE ATT&CK technique. Build a timeline.', tools: ['EDR', 'SIEM', 'ATT&CK Navigator', 'Wireshark', 'Sysmon'] },
+              { label: 'Escalation decision', text: 'Escalate to L3/IR if: confirmed malicious activity, lateral movement detected, privilege escalation observed, data exfiltration indicators, unknown malware. Document escalation rationale — never escalate with just "looks suspicious".', tools: ['Ticketing', 'Slack war channel', 'IR playbook'] },
+              { label: 'Threat hunting (if queue allows)', text: 'Use spare capacity for proactive hunts. Pick a hunt hypothesis from the threat intel brief or a recent ATT&CK technique. Write the hunt query, run it, document negative results too — they prove coverage.', tools: ['SIEM', 'EDR', 'KQL/SPL', 'ATT&CK'] }
+            ]
+          },
+          {
+            title: 'Shift end — handover & documentation', time: 'Last 45 min', steps: [
+              { label: 'Update all open tickets', text: 'Every ticket you touched needs a current status, last action taken, and next expected action. The incoming analyst should be able to pick up any ticket without asking you a question.', tools: ['Jira', 'ServiceNow'] },
+              { label: 'Write shift handover report', text: 'Open incidents with status. Alerts of interest (even if closed). Any new IOCs ingested. Detection rules fired/tuned. Anything the next shift should watch. Template: What happened → What we did → What needs follow-up.', tools: ['Confluence', 'SharePoint', 'Shift log template'] },
+              { label: 'Verbal standup handover', text: 'Walk incoming analyst through any active incidents. Flag anything time-sensitive. Answer questions. This is a live conversation, not just a document pass.', tools: ['Slack / Teams', 'War room channel'] }
+            ]
+          }
+        ]
+      },
+      alert: {
+        label: 'Alert lifecycle', color: '#ff6b52', bg: 'rgba(255,107,82,.12)', tc: '#ff9480', dot: '#ff6b52',
+        metrics: [{ val: 'MTTD', lbl: 'Mean time to detect' }, { val: 'MTTR', lbl: 'Mean time to respond' }, { val: 'MTTC', lbl: 'Mean time to contain' }, { val: 'FPR', lbl: 'False positive rate' }],
+        phases: [
+          {
+            title: 'Alert generation & enrichment', time: 'Automated', steps: [
+              { label: 'Detection sources', text: 'Alerts originate from: SIEM correlation rules, EDR behavioral detections, network IDS/IPS (Snort/Suricata), email security gateway, CSPM, threat intel platform auto-match on IOCs, UEBA anomaly scores.', tools: ['SIEM', 'EDR', 'Snort/Suricata', 'CSPM', 'TIP'] },
+              { label: 'SOAR auto-enrichment', text: 'VirusTotal lookup on IPs/hashes, geolocation of source IPs, asset ownership from CMDB, user department from AD, threat intel feed match, similar past incident lookup — all automated before L1 sees it.', tools: ['SOAR', 'VirusTotal API', 'CMDB', 'AD'] }
+            ]
+          },
+          {
+            title: 'L1 triage', time: 'Target: <15 min per alert', steps: [
+              { label: 'Classify the alert', text: 'FP → close with reason. Benign (known good) → close with reason. Suspicious → promote to L2 with all context. Malicious → promote + immediate L3 notification. Document classification rationale every time.', tools: ['Ticketing', 'Alert classification playbook'] },
+              { label: 'Assign severity', text: 'P1: active breach / ransomware / data exfil. P2: confirmed malicious, contained. P3: suspicious, investigating. P4: informational. SLA clock starts at ticket creation.', tools: ['Ticketing SLA rules'] }
+            ]
+          },
+          {
+            title: 'L2 investigation', time: 'P1 <1hr, P2 <4hr', steps: [
+              { label: 'Build the attack timeline', text: 'Pull all related events chronologically: initial access time, first lateral movement, privilege escalation time, C2 beacon start, data staged. Timeline is the single most important output of an investigation.', tools: ['SIEM timeline view', 'EDR process tree', 'Kibana'] },
+              { label: 'Pivot across log sources', text: "If EDR shows suspicious PowerShell, check: SIEM for other hosts with same behavior, firewall for outbound connections, email gateway for phishing delivery, AD for authentication events. Don't stay in one console.", tools: ['SIEM', 'EDR', 'Firewall logs', 'Email gateway', 'AD logs'] },
+              { label: 'ATT&CK technique mapping', text: 'Map each observed behavior to a specific ATT&CK (sub-)technique. This determines which playbook to invoke, what additional evidence to collect, and how to write the incident report.', tools: ['ATT&CK Navigator'] }
+            ]
+          },
+          {
+            title: 'Containment', time: 'ASAP for P1/P2', steps: [
+              { label: 'Host isolation', text: 'Isolate compromised hosts via EDR (network isolate — keeps EDR telemetry active). Do NOT pull the network cable — you lose forensic telemetry. Document isolation time in ticket.', tools: ['CrowdStrike / Defender / SentinelOne isolation'] },
+              { label: 'Account actions', text: 'Disable compromised accounts. Reset passwords + revoke all sessions + revoke tokens (OAuth, SAML). Force re-auth on all sessions. Check for new accounts created by attacker. Check for new MFA devices added.', tools: ['AD admin', 'Azure AD / Entra ID', 'Identity provider'] },
+              { label: 'Evidence preservation', text: 'Before wiping/reimaging: capture memory image, full disk image or forensic copy of key artifacts (MFT, event logs, prefetch, registry), network packet capture. Evidence chain of custody documented.', tools: ['KAPE', 'FTK Imager', 'Volatility', 'Wireshark'] }
+            ]
+          },
+          {
+            title: 'Eradication & recovery', time: 'Post-containment', steps: [
+              { label: 'Remove persistence mechanisms', text: 'Delete malicious scheduled tasks, registry run keys, services, startup entries, cron jobs. Verify all persistence vectors identified in ATT&CK mapping are cleaned.', tools: ['EDR', 'Registry editor', 'Autoruns'] },
+              { label: 'Verify eradication', text: 'Run threat hunt for all known IOCs of the incident across the entire environment. If any hit — scope was not complete. Repeat containment. Do not restore until this comes back clean.', tools: ['SIEM hunt query', 'EDR IOC search', 'YARA'] }
+            ]
+          }
+        ]
+      },
+      playbook: {
+        label: 'Playbooks', color: '#2dcca7', bg: 'rgba(45,204,167,.12)', tc: '#5ddec0', dot: '#2dcca7',
+        metrics: [{ val: 'P1', lbl: 'Phishing playbook' }, { val: 'P2', lbl: 'Ransomware playbook' }, { val: 'P3', lbl: 'Insider threat' }, { val: 'P4', lbl: 'Account compromise' }],
+        phases: [
+          {
+            title: 'Phishing incident playbook', time: 'Most common — L1 trigger', steps: [
+              { label: 'Email triage', text: 'Collect: full email headers (Received chain), sender address, reply-to, all URLs, all attachments. Check: SPF/DKIM/DMARC pass/fail. Look for lookalike domains (unicode homoglyph, typosquat).', tools: ['Email gateway', 'MXToolbox', 'URLScan.io', 'VirusTotal'] },
+              { label: 'URL and attachment sandbox', text: 'Sandbox all URLs and attachments in isolated environment. Look for: credential harvest pages, malware dropper, exploit kit redirect. Check if URL redirects through legitimate services (IPFS, Discord, OneDrive).', tools: ['Any.run', 'VirusTotal', 'URLScan.io', 'CyberChef'] },
+              { label: 'Blast radius check', text: 'How many users received the same email? Search email gateway by sender domain, subject hash, attachment hash, URL. Any user who clicked — escalate immediately. Any credential submission — account compromise playbook.', tools: ['Email gateway search', 'SIEM email logs', 'EDR for click events'] },
+              { label: 'Response and close', text: 'Block sender domain/IP at email gateway. Add URL to proxy block list. DNS sinkhole C2 domain. Reset credentials for compromised users. Feed new IOCs to TIP. Create/update detection rule if gap found.', tools: ['Email gateway', 'DNS sinkhole', 'TIP', 'Sigma rule editor'] }
+            ]
+          },
+          {
+            title: 'Ransomware incident playbook', time: 'P1 — immediate escalation', steps: [
+              { label: 'STOP THE SPREAD', text: 'Immediately isolate affected hosts via EDR. Do NOT shut down — preserve memory. Isolate at network level too. Identify and isolate any file servers with encrypted network shares. Preserve memory images before any wipe.', tools: ['EDR isolation', 'Network ACL', 'Volatility'] },
+              { label: 'Scope before everything else', text: 'Identify patient zero: which host was first? How many hosts show encrypted files? Are backups affected? Is this targeted (human-operated) or automated spray? Check for exfiltration before encryption — double extortion check.', tools: ['EDR enterprise view', 'SIEM', 'Backup console', 'Firewall logs'] },
+              { label: 'Find the initial access vector', text: 'Pull the timeline back before the ransomware execution. How did the attacker get in? Phishing? VPN exploitation? RDP brute force? This determines whether the vulnerability is still open and needs patching now.', tools: ['SIEM', 'VPN logs', 'EDR process tree', 'AD auth logs'] },
+              { label: 'Leadership and legal notification', text: 'P1 ransomware = mandatory immediate notification to CISO, IR team, legal. Do not delay for complete investigation. Brief in business impact terms: how many hosts, what data may be at risk, what you are doing now.', tools: ['IR escalation contact list', 'Secure communication channel'] },
+              { label: 'Recovery planning', text: 'Do NOT restore until full scope confirmed and root cause remediated. Verify backup integrity and that backups predate compromise. Restore in phases with monitoring. Patch initial access vector before reconnecting.', tools: ['Backup solution', 'EDR', 'Patch management', 'Monitoring'] }
+            ]
+          },
+          {
+            title: 'Account compromise playbook', time: 'Common — affects all tiers', steps: [
+              { label: 'Confirm compromise', text: 'Signals: impossible travel alert, login from new country/device, mass email forwarding rule created, AAD MFA bypass, password spray success followed by quiet period.', tools: ['Identity provider logs', 'SIEM UEBA', 'Azure AD / Okta', 'Conditional Access'] },
+              { label: 'Scope the account activity', text: 'Pull all actions taken by the compromised account in the past 30 days. Focus on: new inbox rules, emails forwarded or deleted, files accessed/downloaded, applications consented to (OAuth), new accounts created.', tools: ['M365 audit log', 'Azure AD sign-in logs', 'DLP', 'SharePoint audit'] },
+              { label: 'Contain account', text: 'Disable account. Revoke all active sessions. Revoke refresh tokens. Remove any malicious inbox rules. Remove any newly added MFA devices (attacker may have added their own phone). Check for new OAuth app consents and revoke.', tools: ['Azure AD / Entra ID', 'Exchange admin', 'Okta', 'M365 admin center'] }
+            ]
+          }
+        ]
+      },
+      reporting: {
+        label: 'Reports & metrics', color: '#4f8cff', bg: 'rgba(79,140,255,.12)', tc: '#82b0ff', dot: '#4f8cff',
+        metrics: [{ val: 'Daily', lbl: 'Shift report' }, { val: 'Weekly', lbl: 'SOC metrics report' }, { val: 'Monthly', lbl: 'Trend & posture' }, { val: 'Per-IR', lbl: 'Incident post-mortem' }],
+        phases: [
+          {
+            title: 'Shift handover report', time: 'End of every shift', steps: [
+              { label: 'Structure', text: '1. Shift summary (total alerts, closed, escalated, open). 2. Active incidents with status and next action. 3. Alerts of interest (even closed ones). 4. New IOCs ingested. 5. Anything the next shift must watch. 6. Detection rules tuned.', tools: ['Confluence / SharePoint', 'Shift template'] },
+              { label: 'Tone and audience', text: "Written for the incoming analyst, not management. Technical detail. No vague statements — 'monitoring' is not an action, 'isolating host X pending memory capture' is. Every open item has an owner and next step.", tools: [] }
+            ]
+          },
+          {
+            title: 'Weekly SOC metrics report', time: 'For SOC manager / leadership', steps: [
+              { label: 'Key metrics', text: 'Total alerts generated vs. last week. True positive rate. False positive rate. MTTD, MTTR, MTTC. Alerts closed per analyst (workload balance). Top alert types. Tickets opened/closed/SLA breached. Incidents by severity.', tools: ['SIEM metrics dashboard', 'Ticketing reports', 'SOAR analytics'] },
+              { label: 'Recommendations section', text: "Always include 2–3 concrete recommendations: 'Rule X has 80% FP rate — propose tuning or retirement', 'Coverage gap for T1059.003 identified — propose new Sigma rule', 'User Y triggered 15 alerts — recommend training or HR flag'.", tools: ['Detection backlog', 'ATT&CK gap analysis'] }
+            ]
+          },
+          {
+            title: 'Incident post-mortem / PIR', time: 'Within 72h of P1/P2 close', steps: [
+              { label: 'What to include', text: 'Executive summary (1 paragraph). Timeline of the incident. Root cause. Attack path (initial access → lateral movement → impact). Containment and eradication actions. Data affected. Detection timeline — when did we first have signal vs. when did we detect?', tools: ['Confluence', 'IR timeline tool', 'ATT&CK Navigator'] },
+              { label: 'Detection improvement output', text: 'Every P1/P2 post-mortem must produce at least one detection improvement: a new Sigma rule, a tuned existing rule, a new playbook, an asset coverage gap closed, or a new IOC set ingested.', tools: ['Sigma editor', 'TIP', 'SIEM rule manager'] }
+            ]
+          }
+        ]
+      },
+      improvement: {
+        label: 'Continuous improvement', color: '#5db86a', bg: 'rgba(93,184,106,.12)', tc: '#85d090', dot: '#5db86a',
+        metrics: [{ val: 'Weekly', lbl: 'Detection review' }, { val: 'Per incident', lbl: 'Post-mortem' }, { val: 'Monthly', lbl: 'ATT&CK gap review' }, { val: 'Quarterly', lbl: 'Purple team exercise' }],
+        phases: [
+          {
+            title: 'Detection rule lifecycle', time: 'Ongoing', steps: [
+              { label: 'New rule development', text: 'Source: threat intel reports, post-mortem gaps, ATT&CK coverage analysis, threat hunting findings. Process: write Sigma rule → peer review → test against synthetic data → deploy to staging → monitor FP rate → promote to production.', tools: ['Sigma editor', 'pySigma', 'GitHub', 'SIEM staging'] },
+              { label: 'Rule performance monitoring', text: 'Weekly review of all rules. Track: FP rate, TP rate, alert volume trend, last fired date. Rules with >30% FP rate → tune or retire. Rules that have not fired in 90 days → review if still relevant.', tools: ['SIEM analytics', 'Rule performance dashboard'] },
+              { label: 'Rule retirement process', text: "Don't just delete. Document: why retired, what it detected, what replaced it. Archive in git. This history matters when someone asks 'why don't we detect X anymore?'", tools: ['GitHub', 'Detection runbook'] }
+            ]
+          },
+          {
+            title: 'Threat hunting program', time: 'Structured, not ad-hoc', steps: [
+              { label: 'Hunt hypothesis generation', text: "Hypothesis format: 'An attacker using T1059.003 would produce [observable behavior] in [log source], which I'd look for with [query]'. Sources: new threat intel, ATT&CK techniques not covered by existing rules, post-mortem gaps.", tools: ['ATT&CK Navigator', 'Threat intel feeds', 'SIEM'] },
+              { label: 'Hunt output feeds detections', text: 'Every successful hunt produces a detection rule. This is the loop that makes SOC coverage grow over time. Manual hunts become automated detections. The hunt program shrinks the blind spots.', tools: ['Sigma editor', 'Detection backlog'] }
+            ]
+          },
+          {
+            title: 'Purple team exercises', time: 'Quarterly minimum', steps: [
+              { label: 'What it is', text: 'Red team (or Caldera) executes specific ATT&CK techniques against the production environment. SOC blue team tries to detect and respond. Both teams debrief together. Validates detection rules work in practice, not just on paper.', tools: ['Caldera', 'Atomic Red Team', 'MITRE ATT&CK Evaluations'] },
+              { label: 'Post-exercise debrief', text: 'For every technique simulated: did we detect it? How long did it take? Did the playbook work? What missed? Output: ranked list of detection gaps with remediation plan.', tools: ['ATT&CK Navigator gap layer', 'Detection backlog', 'Post-exercise report'] }
+            ]
+          }
+        ]
+      }
+    };
+
+    /* ── Render workflow ── */
+    let activeWorkflow = 'daily';
+    let openWorkflow = null;
+
+    function renderWorkflowTabs() {
+      document.getElementById('workflow-tabs').innerHTML = Object.entries(workflowViews).map(([k, v]) =>
+        `<button class="vtab${k === activeWorkflow ? ' active' : ''}" onclick="selectWorkflow('${k}')"
+      style="${k === activeWorkflow ? `border-color:${v.color};color:${v.tc};background:${v.bg}` : ''}">${v.label}</button>`
+      ).join('');
+    }
+
+    function renderWorkflowMetrics() {
+      const v = workflowViews[activeWorkflow];
+      document.getElementById('workflow-metrics').innerHTML = v.metrics.map(m =>
+        `<div class="metric-card"><div class="metric-val">${m.val}</div><div class="metric-lbl">${m.lbl}</div></div>`
+      ).join('');
+    }
+
+    function renderWorkflowContent() {
+      const v = workflowViews[activeWorkflow];
+      document.getElementById('workflow-content').innerHTML = '<div class="accordion">' +
+        v.phases.map((p, i) => {
+          const id = `wf-${activeWorkflow}-${i}`;
+          const isOpen = openWorkflow === id;
+          return `<div class="acc-card${isOpen ? ' open' : ''}">
+        <div class="acc-header" onclick="toggleWorkflow('${id}')">
+          <div class="acc-num" style="background:${v.bg};color:${v.tc};font-family:var(--mono)">${i + 1}</div>
+          <div class="acc-title">${p.title}</div>
+          <div class="acc-meta">${p.time}</div>
+          <span class="acc-chevron">&#8964;</span>
+        </div>
+        <div class="acc-body">
+          <div class="acc-inner">
+            ${p.steps.map(s => `
+              <div class="step-row">
+                <div class="step-dot" style="background:${v.dot}"></div>
+                <div>
+                  <span class="step-label">${s.label}</span>
+                  <div class="step-text">${s.text}</div>
+                  ${s.tools && s.tools.length ? `<div class="tools-row">${s.tools.map(t => `<span class="tool-chip">${t}</span>`).join('')}</div>` : ''}
+                </div>
+              </div>`).join('')}
+          </div>
+        </div>
+      </div>`;
+        }).join('') + '</div>';
+    }
+
+    function selectWorkflow(k) { activeWorkflow = k; openWorkflow = null; renderWorkflowTabs(); renderWorkflowMetrics(); renderWorkflowContent(); }
+    function toggleWorkflow(id) { openWorkflow = openWorkflow === id ? null : id; renderWorkflowContent(); }
+
+    /* ── Init ── */
+    renderQATabs(); renderQAContent();
+    renderWorkflowTabs(); renderWorkflowMetrics(); renderWorkflowContent();
+  </script>
+</body>
+
+</html>
