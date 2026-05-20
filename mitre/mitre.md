@@ -21,9 +21,9 @@
 
 ---
 
-# 1. What is MITRE ATT&CK?
+## 1. What is MITRE ATT&CK?
 
-## Definition
+### Definition
 
 MITRE ATT&CK is a globally accessible knowledge base of adversary tactics, techniques, and procedures (TTPs) based on real-world observations.
 
@@ -40,23 +40,23 @@ understand attacker behavior.
 
 ---
 
-# 2. Basic Interview Questions
+## 2. Basic Interview Questions
 
-## Q1. What is MITRE ATT&CK?
+### Q1. What is MITRE ATT&CK?
 
 **Answer:**
 MITRE ATT&CK is a framework that categorizes cyber adversary behavior into tactics, techniques, and procedures based on real-world attacks.
 
 ---
 
-## Q2. What does ATT&CK stand for?
+### Q2. What does ATT&CK stand for?
 
 **Answer:**
 Adversarial Tactics, Techniques, and Common Knowledge.
 
 ---
 
-## Q3. What are TTPs?
+### Q3. What are TTPs?
 
 **Answer:**
 
@@ -72,7 +72,7 @@ Example:
 
 ---
 
-## Q4. Difference between Tactic and Technique?
+### Q4. Difference between Tactic and Technique?
 
 | Tactic                     | Technique              |
 | -------------------------- | ---------------------- |
@@ -82,7 +82,7 @@ Example:
 
 ---
 
-## Q5. What are ATT&CK matrices?
+### Q5. What are ATT&CK matrices?
 
 **Answer:**
 Matrices organize tactics and techniques for different environments:
@@ -94,7 +94,7 @@ Matrices organize tactics and techniques for different environments:
 
 ---
 
-## Q6. What is ATT&CK used for?
+### Q6. What is ATT&CK used for?
 
 **Answer:**
 
@@ -107,9 +107,9 @@ Matrices organize tactics and techniques for different environments:
 
 ---
 
-# 3. Intermediate Questions
+## 3. Intermediate Questions
 
-## Q7. What is ATT&CK Mapping?
+### Q7. What is ATT&CK Mapping?
 
 **Answer:**
 ATT&CK mapping is the process of correlating observed attacker activity, alerts, or logs with ATT&CK techniques.
@@ -123,27 +123,28 @@ PowerShell encoded command
 
 ---
 
-## Q8. Explain ATT&CK Tactics
+### Q8. Explain ATT&CK Tactics
 
-Important tactics:
-
-| Tactic               | Purpose             |
-| -------------------- | ------------------- |
-| Initial Access       | Entry point         |
-| Execution            | Run malicious code  |
-| Persistence          | Maintain access     |
-| Privilege Escalation | Gain admin rights   |
-| Defense Evasion      | Avoid detection     |
-| Credential Access    | Steal credentials   |
-| Discovery            | Gather info         |
-| Lateral Movement     | Move across systems |
-| Collection           | Gather data         |
-| Exfiltration         | Steal data          |
-| Impact               | Disrupt systems     |
+| Tactic | Purpose |
+|---|---|
+| Reconnaissance | Gather target information before attack |
+| Resource Development | Prepare infrastructure, domains, malware, accounts |
+| Initial Access | Gain entry into target environment |
+| Execution | Run malicious code |
+| Persistence | Maintain long-term access |
+| Privilege Escalation | Gain higher permissions |
+| Defense Evasion | Avoid security detection |
+| Credential Access | Steal usernames, passwords, tokens |
+| Discovery | Enumerate systems, users, services |
+| Lateral Movement | Move across systems/networks |
+| Collection | Gather sensitive information |
+| Command and Control (C2) | Communicate with compromised systems |
+| Exfiltration | Steal/export data |
+| Impact | Encrypt, destroy, or disrupt systems |
 
 ---
 
-## Q9. What is ATT&CK Navigator?
+### Q9. What is ATT&CK Navigator?
 
 **Answer:**
 A visualization tool used to:
@@ -155,7 +156,7 @@ A visualization tool used to:
 
 ---
 
-## Q10. Difference between ATT&CK and Cyber Kill Chain?
+### Q10. Difference between ATT&CK and Cyber Kill Chain?
 
 | ATT&CK                | Kill Chain         |
 | --------------------- | ------------------ |
@@ -165,7 +166,10 @@ A visualization tool used to:
 
 ---
 
-## Q11. What is a Sub-technique?
+## 4. Advanced Interview Questions
+
+
+### Q11. What is a Sub-technique?
 
 **Answer:**
 Detailed breakdown of a technique.
@@ -177,11 +181,7 @@ T1059 → Command and Scripting Interpreter
 T1059.001 → PowerShell
 ```
 
----
-
-# 4. Advanced Interview Questions
-
-## Q12. How do you use ATT&CK in threat hunting?
+###  Q12. How do you use ATT&CK in threat hunting?
 
 **Answer:**
 
@@ -194,7 +194,7 @@ T1059.001 → PowerShell
 
 ---
 
-## Q13. How would you map alerts to ATT&CK?
+###  Q13. How would you map alerts to ATT&CK?
 
 **Answer Example:**
 
@@ -207,7 +207,7 @@ T1059.001 → PowerShell
 
 ---
 
-## Q14. How does ATT&CK improve SOC maturity?
+###  Q14. How does ATT&CK improve SOC maturity?
 
 **Answer:**
 
@@ -219,14 +219,14 @@ T1059.001 → PowerShell
 
 ---
 
-## Q15. Explain ATT&CK Coverage Gap Analysis
+###  Q15. Explain ATT&CK Coverage Gap Analysis
 
 **Answer:**
 Comparing existing detections against ATT&CK techniques to identify blind spots.
 
 ---
 
-## Q16. How do adversaries abuse PowerShell?
+###  Q16. How do adversaries abuse PowerShell?
 
 **Answer:**
 
@@ -244,7 +244,7 @@ T1059.001
 
 ---
 
-## Q17. Explain ATT&CK Data Sources
+###  Q17. Explain ATT&CK Data Sources
 
 Examples:
 
@@ -257,9 +257,9 @@ Examples:
 
 ---
 
-# 5. Scenario-Based Questions
+## 5. Scenario-Based Questions
 
-## Q18. A user opened a phishing email and malware executed. Map the attack.
+###  Q18. A user opened a phishing email and malware executed. Map the attack.
 
 **Possible Mapping:**
 
@@ -273,7 +273,7 @@ Examples:
 
 ---
 
-## Q19. How would you detect lateral movement?
+###  Q19. How would you detect lateral movement?
 
 **Answer:**
 Monitor:
@@ -292,7 +292,7 @@ T1021
 
 ---
 
-## Q20. How do attackers maintain persistence?
+###  Q20. How do attackers maintain persistence?
 
 **Answer:**
 
@@ -304,9 +304,9 @@ T1021
 
 ---
 
-# 6. ATT&CK Mapping Questions
+## 6. ATT&CK Mapping Questions
 
-## Q21. Map these activities
+###  Q21. Map these activities
 
 | Activity             | Technique |
 | -------------------- | --------- |
@@ -318,7 +318,7 @@ T1021
 
 ---
 
-## Q22. How do you perform ATT&CK mapping during incident response?
+###  Q22. How do you perform ATT&CK mapping during incident response?
 
 **Answer:**
 
@@ -330,9 +330,9 @@ T1021
 
 ---
 
-# 7. TTP Questions
+## 7. TTP Questions
 
-## Q23. Explain TTP lifecycle
+###  Q23. Explain TTP lifecycle
 
 | Component  | Description             |
 | ---------- | ----------------------- |
@@ -342,7 +342,7 @@ T1021
 
 ---
 
-## Q24. Give an example of TTPs
+###  Q24. Give an example of TTPs
 
 | Tactic            | Technique             | Procedure              |
 | ----------------- | --------------------- | ---------------------- |
@@ -350,16 +350,16 @@ T1021
 
 ---
 
-## Q25. Why are TTPs important?
+###  Q25. Why are TTPs important?
 
 **Answer:**
 Because attacker infrastructure changes, but behavior patterns often remain consistent.
 
 ---
 
-# 8. Threat Hunting Questions
+## 8. Threat Hunting Questions
 
-## Q26. How would you hunt for PowerShell abuse?
+###  Q26. How would you hunt for PowerShell abuse?
 
 **Look for:**
 
@@ -371,7 +371,7 @@ Because attacker infrastructure changes, but behavior patterns often remain cons
 
 ---
 
-## Q27. What logs are important for ATT&CK hunting?
+###  Q27. What logs are important for ATT&CK hunting?
 
 | Log Type           | Usage                   |
 | ------------------ | ----------------------- |
@@ -383,7 +383,7 @@ Because attacker infrastructure changes, but behavior patterns often remain cons
 
 ---
 
-## Q28. Explain hypothesis-driven hunting
+###  Q28. Explain hypothesis-driven hunting
 
 **Answer:**
 Creating assumptions based on attacker techniques and validating them using telemetry.
@@ -396,9 +396,9 @@ Adversaries may abuse PowerShell for execution.
 
 ---
 
-# 9. Detection Engineering Questions
+## 9. Detection Engineering Questions
 
-## Q29. How do you build detections using ATT&CK?
+###  Q29. How do you build detections using ATT&CK?
 
 **Answer:**
 
@@ -410,23 +410,23 @@ Adversaries may abuse PowerShell for execution.
 
 ---
 
-## Q30. What is detection coverage?
+###  Q30. What is detection coverage?
 
 **Answer:**
 Measurement of how many ATT&CK techniques your security tools can detect.
 
 ---
 
-## Q31. Explain Atomic Red Team
+###  Q31. Explain Atomic Red Team
 
 **Answer:**
 A tool used to simulate ATT&CK techniques safely for testing detections.
 
 ---
 
-# 10. SOC Analyst Questions
+## 10. SOC Analyst Questions
 
-## Q32. What ATT&CK techniques are commonly seen in ransomware?
+###  Q32. What ATT&CK techniques are commonly seen in ransomware?
 
 | Stage             | Technique       |
 | ----------------- | --------------- |
@@ -438,7 +438,7 @@ A tool used to simulate ATT&CK techniques safely for testing detections.
 
 ---
 
-## Q33. How would you prioritize ATT&CK techniques?
+###  Q33. How would you prioritize ATT&CK techniques?
 
 **Answer:**
 Based on:
@@ -450,16 +450,16 @@ Based on:
 
 ---
 
-# 11. Red Team / Blue Team Questions
+## 11. Red Team / Blue Team Questions
 
-## Q34. How do red teams use ATT&CK?
+###  Q34. How do red teams use ATT&CK?
 
 **Answer:**
 For adversary emulation and attack simulation.
 
 ---
 
-## Q35. How do blue teams use ATT&CK?
+###  Q35. How do blue teams use ATT&CK?
 
 **Answer:**
 For:
@@ -471,7 +471,7 @@ For:
 
 ---
 
-# 12. Common Tools Related to ATT&CK
+## 12. Common Tools Related to ATT&CK
 
 | Tool             | Purpose                       |
 | ---------------- | ----------------------------- |
@@ -485,7 +485,7 @@ For:
 
 ---
 
-# 13. Important ATT&CK Techniques to Memorize
+## 13. Important ATT&CK Techniques to Memorize
 
 | Technique            | ID        |
 | -------------------- | --------- |
@@ -502,9 +502,9 @@ For:
 
 ---
 
-# 14. Hard Questions Interviewers Ask
+## 14. Hard Questions Interviewers Ask
 
-## Q36. How do you validate ATT&CK mapping accuracy?
+###  Q36. How do you validate ATT&CK mapping accuracy?
 
 **Answer:**
 
@@ -516,7 +516,7 @@ For:
 
 ---
 
-## Q37. Explain limitations of ATT&CK
+###  Q37. Explain limitations of ATT&CK
 
 **Answer:**
 
@@ -527,7 +527,7 @@ For:
 
 ---
 
-## Q38. Difference between IOC and TTP?
+###  Q38. Difference between IOC and TTP?
 
 | IOC               | TTP                 |
 | ----------------- | ------------------- |
@@ -537,7 +537,7 @@ For:
 
 ---
 
-## Q39. How would you detect fileless malware?
+###  Q39. How would you detect fileless malware?
 
 **Answer:**
 Monitor:
@@ -550,9 +550,9 @@ Monitor:
 
 ---
 
-# 15. Behavioral Questions
+## 15. Behavioral Questions
 
-## Q40. Tell me about a threat hunting case you worked on
+###  Q40. Tell me about a threat hunting case you worked on
 
 Structure:
 
@@ -565,7 +565,7 @@ Result
 
 ---
 
-## Q41. Describe a difficult alert investigation
+###  Q41. Describe a difficult alert investigation
 
 Mention:
 
@@ -577,7 +577,7 @@ Mention:
 
 ---
 
-# 16. Rapid-Fire Questions
+## 16. Rapid-Fire Questions
 
 | Question                  | Answer                 |
 | ------------------------- | ---------------------- |
@@ -603,9 +603,9 @@ Mention:
 
 ---
 
-# Practical Interview Exercise They May Give
+# Practical Interview Exercise
 
-## Example:
+###  Example:
 
 ```text
 Alert:
@@ -623,105 +623,13 @@ powershell.exe -enc SQBFAFgA...
 
 ---
 
-# Best Way to Answer in Interviews
+## 1. Reconnaissance (TA0043)
 
-Use this format:
-
-```text
-1. Explain the concept
-2. Mention ATT&CK technique ID
-3. Give real-world example
-4. Mention detection strategy
-5. Mention mitigation
-```
-
----
-
-# Final Interview Tips
-
-## Memorize These:
-
-* Top 15 ATT&CK techniques
-* Common ransomware chains
-* PowerShell abuse
-* Credential dumping
-* Persistence methods
-* ATT&CK tactics order
-
-## Practice:
-
-* ATT&CK mapping
-* Sigma rules
-* Splunk queries
-* Threat hunting scenarios
-
-## Be Ready For:
-
-* Log analysis
-* Incident timelines
-* Detection engineering
-* Mapping alerts to ATT&CK
-
----
-
-# Bonus: Example Full Attack Chain
-
-```text
-Phishing Email
-→ T1566
-
-Malicious Macro
-→ T1204
-
-PowerShell Execution
-→ T1059.001
-
-Credential Dumping
-→ T1003
-
-Lateral Movement
-→ T1021
-
-Data Exfiltration
-→ T1041
-
-Ransomware Encryption
-→ T1486
-```
-
----
-
-## Complete ATT&CK Tactics With Real Examples
-
-| Order | Tactic               | Goal                             |
-| ----- | -------------------- | -------------------------------- |
-| 1     | Reconnaissance       | Gather target information        |
-| 2     | Resource Development | Prepare infrastructure/resources |
-| 3     | Initial Access       | Enter victim environment         |
-| 4     | Execution            | Run malicious code               |
-| 5     | Persistence          | Maintain access                  |
-| 6     | Privilege Escalation | Gain higher privileges           |
-| 7     | Stealth              | Hide malicious actions           |
-| 8     | Defense Impairment   | Disable/bypass defenses          |
-| 9     | Credential Access    | Steal credentials                |
-| 10    | Discovery            | Learn environment details        |
-| 11    | Lateral Movement     | Move between systems             |
-| 12    | Collection           | Gather target data               |
-| 13    | Command and Control  | Communicate with attacker        |
-| 14    | Exfiltration         | Steal data                       |
-| 15    | Impact               | Damage/disrupt systems           |
-
-([MITRE ATT&CK][2])
-
----
-
-# 1. Reconnaissance (TA0043)
-
-## Goal
+### Goal
 
 Attacker gathers information before attacking.
 
-## Real Examples
+### Real Examples
 
 * Scanning LinkedIn employees
 * Finding company emails
@@ -729,7 +637,7 @@ Attacker gathers information before attacking.
 * Port scanning
 * WHOIS lookup
 
-## Techniques
+### Techniques
 
 | Technique                   | ID    |
 | --------------------------- | ----- |
@@ -737,7 +645,7 @@ Attacker gathers information before attacking.
 | Gather Victim Identity Info | T1589 |
 | Gather Victim Network Info  | T1590 |
 
-## Example Attack
+### Example Attack
 
 ```text id="n7k0k6"
 Attacker searches employee emails on LinkedIn
@@ -746,27 +654,27 @@ Attacker searches employee emails on LinkedIn
 
 ---
 
-# 2. Resource Development (TA0042)
+## 2. Resource Development (TA0042)
 
-## Goal
+#### Goal
 
 Prepare infrastructure for attack.
 
-## Examples
+### Examples
 
 * Buying domains
 * Setting up VPS servers
 * Creating malware
 * Registering phishing websites
 
-## Techniques
+#### Techniques
 
 | Technique              | ID    |
 | ---------------------- | ----- |
 | Acquire Infrastructure | T1583 |
 | Obtain Capabilities    | T1588 |
 
-## Example
+### Example
 
 ```text id="vgn6q6"
 evil-microsoft-login.com
@@ -776,20 +684,20 @@ used for phishing.
 
 ---
 
-# 3. Initial Access (TA0001)
+## 3. Initial Access (TA0001)
 
-## Goal
+### Goal
 
 Get inside victim environment.
 
-## Examples
+### Examples
 
 * Phishing email
 * VPN exploit
 * Public app exploit
 * USB malware
 
-## Techniques
+### Techniques
 
 | Technique                 | ID    |
 | ------------------------- | ----- |
@@ -797,7 +705,7 @@ Get inside victim environment.
 | External Remote Services  | T1133 |
 | Exploit Public-Facing App | T1190 |
 
-## Real Example
+### Real Example
 
 ```text id="1j9t4l"
 User opens malicious attachment
@@ -806,13 +714,13 @@ User opens malicious attachment
 
 ---
 
-# 4. Execution (TA0002)
+## 4. Execution (TA0002)
 
-## Goal
+### Goal
 
 Run malicious code.
 
-## How It Happens
+### How It Happens
 
 Attacker executes:
 
@@ -822,7 +730,7 @@ Attacker executes:
 * Malware
 * Macros
 
-## Techniques
+### Techniques
 
 | Technique      | ID        |
 | -------------- | --------- |
@@ -830,13 +738,13 @@ Attacker executes:
 | Command Shell  | T1059.003 |
 | User Execution | T1204     |
 
-## Example
+### Example
 
 ```text id="v58d4x"
 powershell -enc SQBFAFgA...
 ```
 
-## Detection
+### Detection
 
 * Sysmon Event ID 1
 * PowerShell logs
@@ -844,13 +752,13 @@ powershell -enc SQBFAFgA...
 
 ---
 
-# 5. Persistence (TA0003)
+## 5. Persistence (TA0003)
 
-## Goal
+### Goal
 
 Stay in system after reboot/logout.
 
-## Examples
+### Examples
 
 * Scheduled tasks
 * Registry Run Keys
@@ -858,7 +766,7 @@ Stay in system after reboot/logout.
 * Services
 * SSH keys
 
-## Techniques
+### Techniques
 
 | Technique         | ID    |
 | ----------------- | ----- |
@@ -866,7 +774,7 @@ Stay in system after reboot/logout.
 | Registry Run Keys | T1547 |
 | Create Account    | T1136 |
 
-## Example
+### Example
 
 ```text id="x4v0nm"
 Malware adds itself to startup registry
@@ -874,20 +782,20 @@ Malware adds itself to startup registry
 
 ---
 
-# 6. Privilege Escalation (TA0004)
+## 6. Privilege Escalation (TA0004)
 
-## Goal
+### Goal
 
 Become admin/root.
 
-## Examples
+### Examples
 
 * SUID abuse
 * Kernel exploit
 * Token impersonation
 * UAC bypass
 
-## Techniques
+### Techniques
 
 | Technique                 | ID        |
 | ------------------------- | --------- |
@@ -895,7 +803,7 @@ Become admin/root.
 | Access Token Manipulation | T1134     |
 | Sudo and Sudo Caching     | T1548.003 |
 
-## Linux Example
+### Linux Example
 
 ```text id="uik7m9"
 find / -perm -4000
@@ -905,9 +813,9 @@ used to find vulnerable SUID binaries.
 
 ---
 
-# 7. Stealth (TA0005)
+## 7. Stealth (TA0005)
 
-## Goal
+### Goal
 
 Hide malicious activity and blend with normal behavior.
 
@@ -915,7 +823,7 @@ MITRE says Stealth focuses on:
 
 > concealment without disabling defenses. ([MITRE ATT&CK][3])
 
-## Examples
+### Examples
 
 * Obfuscation
 * LOLBins
@@ -923,7 +831,7 @@ MITRE says Stealth focuses on:
 * Masquerading
 * Process injection
 
-## Techniques
+### Techniques
 
 | Technique                 | ID    |
 | ------------------------- | ----- |
@@ -932,13 +840,13 @@ MITRE says Stealth focuses on:
 | Process Injection         | T1055 |
 | Access Token Manipulation | T1134 |
 
-## Real Example
+### Real Example
 
 ```text id="6s5nmr"
 malware.exe renamed to svchost.exe
 ```
 
-## Another Example
+### Another Example
 
 ```text id="h5z2ra"
 Using PowerShell instead of custom malware
@@ -948,15 +856,15 @@ because PowerShell is trusted.
 
 ---
 
-# 8. Defense Impairment (TA0112)
+## 8. Defense Impairment (TA0112)
 
-## Goal
+### Goal
 
 Break or disable security tools.
 
 MITRE introduced this tactic separately in v19. ([MITRE ATT&CK][1])
 
-## Examples
+### Examples
 
 * Disable antivirus
 * Stop EDR agent
@@ -964,7 +872,7 @@ MITRE introduced this tactic separately in v19. ([MITRE ATT&CK][1])
 * Disable logging
 * Remove SIEM agents
 
-## Techniques
+### Techniques
 
 | Technique               | ID    |
 | ----------------------- | ----- |
@@ -974,13 +882,13 @@ MITRE introduced this tactic separately in v19. ([MITRE ATT&CK][1])
 
 ([MITRE ATT&CK][1])
 
-## Real Example
+### Real Example
 
 ```text id="4w7n8v"
 sc stop WinDefend
 ```
 
-## Another Example
+### Another Example
 
 ```text id="4gx2p6"
 netsh advfirewall set allprofiles state off
@@ -988,20 +896,20 @@ netsh advfirewall set allprofiles state off
 
 ---
 
-# 9. Credential Access (TA0006)
+## 9. Credential Access (TA0006)
 
-## Goal
+### Goal
 
 Steal usernames/passwords/tokens.
 
-## Examples
+### Examples
 
 * LSASS dumping
 * Keylogging
 * Browser credential theft
 * Kerberoasting
 
-## Techniques
+### Techniques
 
 | Technique             | ID        |
 | --------------------- | --------- |
@@ -1009,7 +917,7 @@ Steal usernames/passwords/tokens.
 | Keylogging            | T1056.001 |
 | Brute Force           | T1110     |
 
-## Example
+### Example
 
 ```text id="wb7d95"
 mimikatz sekurlsa::logonpasswords
@@ -1017,20 +925,20 @@ mimikatz sekurlsa::logonpasswords
 
 ---
 
-# 10. Discovery (TA0007)
+## 10. Discovery (TA0007)
 
-## Goal
+### Goal
 
 Understand victim environment.
 
-## Examples
+### Examples
 
 * Network scanning
 * User enumeration
 * Domain trust discovery
 * Process listing
 
-## Techniques
+### Techniques
 
 | Technique                | ID    |
 | ------------------------ | ----- |
@@ -1038,7 +946,7 @@ Understand victim environment.
 | Account Discovery        | T1087 |
 | Network Service Scanning | T1046 |
 
-## Example
+### Example
 
 ```text id="kq0t2j"
 whoami
@@ -1048,27 +956,27 @@ net user
 
 ---
 
-# 11. Lateral Movement (TA0008)
+## 11. Lateral Movement (TA0008)
 
-## Goal
+### Goal
 
 Move to other systems.
 
-## Examples
+### Examples
 
 * RDP
 * SMB
 * PsExec
 * WMI
 
-## Techniques
+### Techniques
 
 | Technique                | ID        |
 | ------------------------ | --------- |
 | Remote Services          | T1021     |
 | SMB/Windows Admin Shares | T1021.002 |
 
-## Example
+### Example
 
 ```text id="l2a1c8"
 psexec \\server cmd.exe
@@ -1076,27 +984,27 @@ psexec \\server cmd.exe
 
 ---
 
-# 12. Collection (TA0009)
+## 12. Collection (TA0009)
 
-## Goal
+### Goal
 
 Gather valuable data.
 
-## Examples
+### Examples
 
 * Screenshot capture
 * File collection
 * Clipboard capture
 * Email collection
 
-## Techniques
+### Techniques
 
 | Technique              | ID    |
 | ---------------------- | ----- |
 | Screen Capture         | T1113 |
 | Archive Collected Data | T1560 |
 
-## Example
+### Example
 
 ```text id="66m0vf"
 zip confidential files before exfiltration
@@ -1104,27 +1012,27 @@ zip confidential files before exfiltration
 
 ---
 
-# 13. Command and Control (TA0011)
+## 13. Command and Control (TA0011)
 
-## Goal
+### Goal
 
 Communicate with attacker server.
 
-## Examples
+### Examples
 
 * Reverse shell
 * Beaconing
 * DNS tunneling
 * HTTPS C2
 
-## Techniques
+### Techniques
 
 | Technique                  | ID    |
 | -------------------------- | ----- |
 | Application Layer Protocol | T1071 |
 | Ingress Tool Transfer      | T1105 |
 
-## Example
+### Example
 
 ```text id="1woa48"
 Beacon every 60 seconds to C2 server
@@ -1132,27 +1040,27 @@ Beacon every 60 seconds to C2 server
 
 ---
 
-# 14. Exfiltration (TA0010)
+## 14. Exfiltration (TA0010)
 
-## Goal
+### Goal
 
 Steal data out of environment.
 
-## Examples
+### Examples
 
 * Cloud upload
 * FTP
 * HTTPS
 * DNS tunneling
 
-## Techniques
+### Techniques
 
 | Technique                     | ID        |
 | ----------------------------- | --------- |
 | Exfiltration Over C2          | T1041     |
 | Exfiltration to Cloud Storage | T1567.002 |
 
-## Example
+### Example
 
 ```text id="10dz34"
 Upload stolen files to Dropbox
@@ -1160,27 +1068,27 @@ Upload stolen files to Dropbox
 
 ---
 
-# 15. Impact (TA0040)
+## 15. Impact (TA0040)
 
-## Goal
+### Goal
 
 Damage systems/data/business.
 
-## Examples
+### Examples
 
 * Ransomware
 * Data wiping
 * Service shutdown
 * Encryption
 
-## Techniques
+### Techniques
 
 | Technique                 | ID    |
 | ------------------------- | ----- |
 | Data Encrypted for Impact | T1486 |
 | Disk Wipe                 | T1561 |
 
-## Example
+### Example
 
 ```text id="quyv7n"
 Ransomware encrypts all files
@@ -1188,88 +1096,69 @@ Ransomware encrypts all files
 
 ---
 
-# Full Real-World Attack Flow
+# Example Modern Cyber Attack Chain (2025–2026)
 
-```text id="p4mjlwm"
+### Scenario
+A ransomware affiliate targets a company using phishing and stealth techniques.
+
+---
+
+# Full Attack Flow with MITRE ATT&CK Mapping
+
+| Phase | Action | MITRE ATT&CK Technique |
+|---|---|---|
+| Reconnaissance | Attacker gathers employee emails from LinkedIn | T1593 — Search Open Websites/Domains |
+| Resource Development | Registers fake Microsoft login domain | T1583 — Acquire Infrastructure |
+| Initial Access | Sends phishing email with malicious link | T1566.002 — Phishing: Spearphishing Link |
+| Execution | Victim opens payload via malicious HTA | T1218.005 — Mshta |
+| Execution | PowerShell downloads second-stage malware | T1059.001 — PowerShell |
+| Defense Evasion | Malware disables Windows Defender | T1562.001 — Disable Security Tools |
+| Defense Evasion | AMSI bypass to avoid PowerShell detection | T1562 — Impair Defenses |
+| Persistence | Creates scheduled task for reboot persistence | T1053.005 — Scheduled Task |
+| Privilege Escalation | Exploits vulnerable driver (BYOVD) | T1068 — Exploitation for Privilege Escalation |
+| Credential Access | Dumps LSASS credentials using Mimikatz | T1003.001 — LSASS Memory |
+| Discovery | Enumerates domain users/groups | T1087 — Account Discovery |
+| Discovery | Maps internal network shares | T1135 — Network Share Discovery |
+| Lateral Movement | Uses PsExec to move laterally | T1021.002 — SMB/Windows Admin Shares |
+| Lateral Movement | Uses stolen admin credentials over RDP | T1021.001 — Remote Desktop Protocol |
+| Collection | Compresses sensitive files | T1560 — Archive Collected Data |
+| Exfiltration | Uploads data to MEGA cloud storage | T1567.002 — Exfiltration to Cloud Storage |
+| Command & Control | Malware communicates over HTTPS beacon | T1071.001 — Web Protocols |
+| Stealth | Uses sleep obfuscation to evade EDR | T1497.003 — Time Based Evasion |
+| Impact | Deploys ransomware encryptor | T1486 — Data Encrypted for Impact |
+| Impact | Deletes backups/shadow copies | T1490 — Inhibit System Recovery |
+
+---
+
+# Visual Kill Chain
+
+```text
 Recon
-→ find employees
-
-Resource Development
-→ setup phishing domain
-
-Initial Access
-→ phishing email
-
-Execution
-→ PowerShell malware
-
-Persistence
-→ scheduled task
-
-Privilege Escalation
-→ token impersonation
-
-Stealth
-→ obfuscation
-
-Defense Impairment
-→ disable Defender
-
-Credential Access
-→ dump LSASS
-
-Discovery
-→ scan network
-
-Lateral Movement
-→ PsExec
-
-Collection
-→ gather files
-
-C2
-→ HTTPS beacon
-
-Exfiltration
-→ upload data
-
-Impact
-→ ransomware encryption
-```
-
----
-
-# Most Important Techniques To Memorize For Interviews
-
-| Technique              | ID        |
-| ---------------------- | --------- |
-| PowerShell             | T1059.001 |
-| Credential Dumping     | T1003     |
-| Phishing               | T1566     |
-| PsExec                 | T1021.002 |
-| Process Injection      | T1055     |
-| Masquerading           | T1036     |
-| Registry Run Keys      | T1547     |
-| Exfiltration Over C2   | T1041     |
-| Data Encryption        | T1486     |
-| Disable Security Tools | T1685     |
-
----
-
-# Important Interview Question
-
-## Q: Difference between Stealth and Defense Impairment?
-
-| Stealth                    | Defense Impairment          |
-| -------------------------- | --------------------------- |
-| Hide activity              | Disable defenses            |
-| Blend with normal behavior | Break security controls     |
-| Uses obfuscation           | Stops AV/EDR                |
-| Example: masquerading      | Example: disabling Defender |
-
-([MITRE ATT&CK][1])
-
-[1]: https://attack.mitre.org/tactics/TA0112/?utm_source=chatgpt.com "Defense Impairment, Tactic TA0112 - Enterprise | MITRE ATT&CK®"
-[2]: https://attack.mitre.org/tactics/enterprise/?utm_source=chatgpt.com "Tactics - Enterprise | MITRE ATT&CK®"
-[3]: https://attack.mitre.org/tactics/TA0005/?utm_source=chatgpt.com "Stealth, Tactic TA0005 - Enterprise | MITRE ATT&CK®"
-
+  ↓
+Phishing Email
+  ↓
+Malicious Link
+  ↓
+HTA Payload (mshta.exe)
+  ↓
+PowerShell Downloader
+  ↓
+Disable Defender + AMSI Bypass
+  ↓
+Persistence via Scheduled Task
+  ↓
+Privilege Escalation (BYOVD)
+  ↓
+Credential Dumping (LSASS)
+  ↓
+Internal Discovery
+  ↓
+Lateral Movement (PsExec/RDP)
+  ↓
+Data Collection + Compression
+  ↓
+Exfiltration to Cloud
+  ↓
+C2 Beaconing (HTTPS)
+  ↓
+Ransomware Deployment
